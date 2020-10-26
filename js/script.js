@@ -30,11 +30,17 @@ function hitungPinjaman(){
     else if(jenis == 'efektif')
     {
         jQuery('#hasil-simulasi-cicilan').text('Rp. '+format.format(hitungEfe(pinjaman, bunga, durasi))+',-');
-    }   
+    }
+    detailSimulasi();
 }
 
+jQuery('#live-simulasi-lengkap-page').click(function(){
+    // detailSimulasi();
+    jQuery('#print-live-kalkulasi-kredit').show();
+});
+
 jQuery('#live-simulasi-lengkap-modal').click(function(){
-    detailSimulasi();
+    // detailSimulasi();
     jQuery('#modal-home-live-kalkulasi-kredit').modal('show');
 });
 
