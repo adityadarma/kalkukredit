@@ -1,0 +1,75 @@
+.box-live-kalkulator {
+    max-width: 100% !important;
+	width: 100%;
+	min-height: 50px;
+	height: auto;
+	margin-top: 30px;
+	font-family: 'Roboto'
+	/* border: 2px solid #ffb536; */
+}
+
+.box-live-kalkulator .live-form {
+	padding: 18px 50px;
+}
+
+.box-live-kalkulator .live-form form {
+	padding-top: 10px;
+}
+
+.box-live-kalkulator .live-calculate {
+	background-color: #ffb536;
+	min-height: 48px;
+	height: auto;
+	text-align: center;
+	padding: 30px;
+	position: relative;
+	right: 15px;
+}
+
+.live-calculate a {
+	font-size: 16px;
+	color: #ffffff;
+}
+.live-calculate h3 {
+	color: #ffffff;
+}
+.live-form .input-group-addon {
+	border-radius: 0;
+	border: 1px solid #d4d4d4;
+}
+.live-form .control-label {
+	font-size: 18px;
+	color: #000000;
+}
+.live-form .form-control {
+	border: 1px solid #d4d4d4;
+	height: 37px;
+}
+.live-form .form-control:focus {
+	border: 1px solid #d4d4d4;
+}
+
+.live-sukubunga-wrapper {
+	width: 100%;
+}
+.live-sukubunga-wrapper .input-group {
+	width: 50%;
+	float: left;
+}
+.modal-live-kalkulator {
+	font-family: 'Roboto'
+}
+.modal-thema {
+	background-color: #ffb536;
+	color: #ffffff;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ffb536;
+    border-color: #ffb536;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
