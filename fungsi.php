@@ -112,11 +112,11 @@ function kalkulator_depan() {
                             <div class="live-sukubunga-wrapper">
                                 <div class="input-group">
                                     <input type="number" class="form-control" id="live-suku-bunga" name="suku-bunga" placeholder="" value="1.75" min="1" step="0.05" max="5">
-                                    <div class="input-group-addon"> % per bulan </div>
+                                    <div class="input-group-addon"> %/bulan </div>
                                 </div>
                                 <div class="input-group">
                                     <input type="number" class="form-control" id="live-suku-bunga-tahun" name="suku-bunga-tahun" placeholder="" value="21" readonly="">
-                                    <div class="input-group-addon">% per tahun</div>
+                                    <div class="input-group-addon">%/tahun</div>
                                 </div>
                             </div>
                         </div>
