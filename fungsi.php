@@ -127,7 +127,7 @@ function kalkulator_depan() {
                 <h3 class="simulasi-cicilan-title">Simulasi Cicilan<br>per bulan<span>*</span></h3>
                 <h3 class="hasil-simulasi-cicilan" id="hasil-simulasi-cicilan"></h3>
                 <p><a href="/form-permohonan-kredit/">Ajukan Sekarang <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-                <p><a id="live-simulasi-lengkap" href="javascript:void(0)">Lihat Simulasi Lengkap <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+                <p><a id="live-simulasi-lengkap-modal" href="javascript:void(0)">Lihat Simulasi Lengkap <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
                 <p class="live-calc-note-mobile">*) Simulasi cicilan di atas hanya perkiraan.</p>
             </div>
         </div>
@@ -202,7 +202,7 @@ function kalkulator_depan() {
                 <div class="modal-footer">
                     <div class="row">
                         <div class="col-md-6 text-left">
-                            <a href="/aplikasi-kredit/" class="btn btn-theme-bg btn-ajukan-sekarang-modal">AJUKAN SEKARANG</a>
+                            <a href="/form-permohonan-kredit/" class="btn btn-theme-bg btn-ajukan-sekarang-modal">AJUKAN SEKARANG</a>
                         </div>
                         <div class="col-md-6 modal-ajukan-sekarang-tombol">
                             <button id="button-print-box-kalkulasi-kredit" type="button" class="btn btn-primary">CETAK</button>

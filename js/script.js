@@ -33,7 +33,7 @@ function hitungPinjaman(){
     }   
 }
 
-jQuery('#live-simulasi-lengkap').click(function(){
+jQuery('#live-simulasi-lengkap-modal').click(function(){
     detailSimulasi();
     jQuery('#modal-home-live-kalkulasi-kredit').modal('show');
 });
