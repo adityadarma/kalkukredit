@@ -1,9 +1,11 @@
 var format = new curFormatter();
 
-jQuery('#live-perhitungan-bunga, #live-jangka-waktu').on('change', function(){
+jQuery('#live-perhitungan-bunga, #live-jangka-waktu, #live-suku-bunga').on('change', function(){
+    bungaTahun();
     hitungPinjaman();
 });
 jQuery('#live-jumlah-pinjaman, #live-suku-bunga').on('keyup', function(){
+    bungaTahun();
     hitungPinjaman();
 });
 jQuery('#live-suku-bunga').on('click', function(){
