@@ -31,6 +31,10 @@ function hitungPinjaman(){
     {
         jQuery('#hasil-simulasi-cicilan').text('Rp. '+format.format(hitungEfe(pinjaman, bunga, durasi))+',-');
     }
+    else if(jenis == 'flat')
+    {
+        jQuery('#hasil-simulasi-cicilan').text('Rp. '+format.format(hitungFlat(pinjaman, bunga, durasi))+',-');
+    }
     detailSimulasi();
 }
 
@@ -95,6 +99,29 @@ function detailSimulasi(){
         jQuery('#data-jenis').text('Efektif');
         jQuery('#angsuran-info').text('Rp. '+format.format(hitungEfe(pinjaman, bunga, durasi)));
     }
+    else if(jenis == 'flat')
+    {
+        var pokok = pinjaman / durasi;
+        var sisa_pinjaman = pinjaman;
+        var html = '';
+        for (let index = 1; index <= durasi; index++) {
+            let angsuran_bunga = pinjaman * ((parseFloat(bunga) / 12) / 100);
+            
+            sisa_pinjaman = sisa_pinjaman - pokok;
+            html += '<tr>'+
+                        '<td class="text-center">'+index+'</td>'+
+                        '<td class="text-center">Rp. '+format.format(pokok)+'</td>'+
+                        '<td class="text-center">Rp. '+format.format(angsuran_bunga)+'</td>'+
+                        '<td class="text-center">Rp. '+format.format(pokok+angsuran_bunga)+'</td>'+
+                        '<td class="text-center">Rp. '+format.format(sisa_pinjaman)+'</td>'+
+                    '</tr>'
+        }
+
+
+        jQuery('#tabel-anuitas').html(html);
+        jQuery('#data-jenis').text('Flat');
+        jQuery('#angsuran-info').text('Rp. '+format.format(hitungFlat(pinjaman, bunga, durasi)));
+    }
 
     jQuery('#data-pinjaman').text('Rp. '+jQuery('#live-jumlah-pinjaman').val());
     jQuery('#data-bunga').text(jQuery('#live-suku-bunga-tahun').val()+'% per Tahun');
@@ -106,6 +133,10 @@ function hitungAnu(pinjaman, bunga, durasi) {
 }
 
 function hitungEfe(pinjaman, bunga, durasi) {
+    return ( pinjaman / durasi) + (pinjaman * ((parseFloat(bunga) / 12) / 100));
+}
+
+function hitungFlat(pinjaman, bunga, durasi) {
     return ( pinjaman / durasi) + (pinjaman * ((parseFloat(bunga) / 12) / 100));
 }
 

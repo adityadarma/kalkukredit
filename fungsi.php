@@ -28,6 +28,7 @@ function kalkulator_kredit() {
                             <select id="live-perhitungan-bunga" name="perhitungan-bunga" class="form-control">
                                 <option value="anuitas" selected="selected">Anuitas (Angsuran Tetap)</option>
                                 <option value="efektif">Efektif (Angsuran Menurun)</option>
+                                <option value="flat">Flat (Angsuran Tetap)</option>
                             </select>
                         </div>
                     </div>
@@ -186,6 +187,7 @@ function kalkulator_depan() {
                             <select id="live-perhitungan-bunga" name="perhitungan-bunga" class="form-control">
                                 <option value="anuitas" selected="selected">Anuitas (Angsuran Tetap)</option>
                                 <option value="efektif">Efektif (Angsuran Menurun)</option>
+                                <option value="flat">Flat (Angsuran Tetap)</option>
                             </select>
                         </div>
                     </div>
