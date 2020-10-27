@@ -8,8 +8,9 @@
   Author URI: https://adityadarma.dev
  */
 
-wp_register_style ( 'cssbootstrap', plugins_url ( 'css/bootstrap.min.css', __FILE__ ) );
+wp_register_style ( 'cssbootstrap', plugins_url ( 'css/bootstrap.css', __FILE__ ) );
 wp_register_style ( 'stylekredit', plugins_url ( 'css/style.css', __FILE__ ) );
+
 
 wp_register_script ( 'jsbootstrap', plugins_url ( 'js/bootstrap.min.js', __FILE__ ) );
 wp_register_script ( 'jsnumeral', plugins_url ( 'js/numeral.js', __FILE__ ) );

@@ -97,7 +97,7 @@ function detailSimulasi(){
     }
 
     jQuery('#data-pinjaman').text('Rp. '+jQuery('#live-jumlah-pinjaman').val());
-    jQuery('#data-bunga').text(jQuery('#live-suku-bunga-tahun').val()+'% pertahun');
+    jQuery('#data-bunga').text(jQuery('#live-suku-bunga-tahun').val()+'% per Tahun');
     jQuery('#data-durasi').text(jQuery('#live-jangka-waktu').val()+' bulan');
 }
 
@@ -107,4 +107,14 @@ function hitungAnu(pinjaman, bunga, durasi) {
 
 function hitungEfe(pinjaman, bunga, durasi) {
     return ( pinjaman / durasi) + (pinjaman * ((parseFloat(bunga) / 12) / 100));
+}
+
+function printDiv() 
+{
+var divToPrint=document.getElementById('modal-home-live-kalkulasi-kredit');
+var newWin=window.open('','Print-Window');
+newWin.document.open();
+newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
+newWin.document.close();
+setTimeout(function(){newWin.close();},10);
 }

@@ -54,11 +54,11 @@ function kalkulator_kredit() {
                             <div class="live-sukubunga-wrapper">
                                 <div class="input-group">
                                     <input type="number" class="form-control" id="live-suku-bunga" name="suku-bunga" placeholder="" value="1.75" min="1" step="0.05" max="5">
-                                    <div class="input-group-addon"> %/bulan </div>
+                                    <div class="input-group-addon">% /bulan </div>
                                 </div>
                                 <div class="input-group">
                                     <input type="number" class="form-control" id="live-suku-bunga-tahun" name="suku-bunga-tahun" placeholder="" value="21" readonly="">
-                                    <div class="input-group-addon">%/tahun</div>
+                                    <div class="input-group-addon">% /tahun</div>
                                 </div>
                             </div>
                         </div>
@@ -152,6 +152,13 @@ function kalkulator_kredit() {
 
 add_shortcode('kalkulator_kredit','kalkulator_kredit');
 
+
+
+
+
+
+
+
 function kalkulator_depan() {
     wp_enqueue_style('cssbootstrap');
     wp_enqueue_script('jsbootstrap');
@@ -205,11 +212,11 @@ function kalkulator_depan() {
                             <div class="live-sukubunga-wrapper">
                                 <div class="input-group">
                                     <input type="number" class="form-control" id="live-suku-bunga" name="suku-bunga" placeholder="" value="1.75" min="1" step="0.05" max="5">
-                                    <div class="input-group-addon"> %/bulan </div>
+                                    <div class="input-group-addon">% /bulan </div>
                                 </div>
                                 <div class="input-group">
                                     <input type="number" class="form-control" id="live-suku-bunga-tahun" name="suku-bunga-tahun" placeholder="" value="21" readonly="">
-                                    <div class="input-group-addon">%/tahun</div>
+                                    <div class="input-group-addon">% /tahun</div>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +228,7 @@ function kalkulator_depan() {
                 <h3 class="hasil-simulasi-cicilan" id="hasil-simulasi-cicilan"></h3>
                 <p><a href="/form-permohonan-kredit/">Ajukan Sekarang <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
                 <p><a id="live-simulasi-lengkap-modal" href="javascript:void(0)">Lihat Simulasi Lengkap <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-                <p class="live-calc-note-mobile">*) Simulasi cicilan di atas hanya perkiraan.</p>
+                <p> <i>*) Simulasi cicilan di atas hanya perkiraan.</i></p>
             </div>
         </div>
     </div>
@@ -294,11 +301,11 @@ function kalkulator_depan() {
                 </div>
                 <div class="modal-footer">
                     <div class="row">
-                        <div class="col-md-6 text-left">
-                            <a href="/form-permohonan-kredit/" class="btn btn-theme-bg btn-ajukan-sekarang-modal">AJUKAN SEKARANG</a>
+                        <div >
+                            <a href="/form-permohonan-kredit/" class="btn btn-secondary">AJUKAN SEKARANG</a><a>&nbsp;</a>
                         </div>
-                        <div class="col-md-6 modal-ajukan-sekarang-tombol">
-                            <button id="button-print-box-kalkulasi-kredit" type="button" class="btn btn-primary">CETAK</button>
+                        <div>
+                            <button onclick="printDiv();" type="button" class="btn btn-primary">CETAK</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
