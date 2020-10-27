@@ -28,7 +28,7 @@ function kalkulator_kredit() {
                             <select id="live-perhitungan-bunga" name="perhitungan-bunga" class="form-control">
                                 <option value="anuitas" selected="selected">Anuitas (Angsuran Tetap)</option>
                                 <option value="efektif">Efektif (Angsuran Menurun)</option>
-                                <option value="flat">Flat (Angsuran Tetap)</option>
+                                <option value="flat">Flat (Tetap)</option>
                             </select>
                         </div>
                     </div>
@@ -150,15 +150,7 @@ function kalkulator_kredit() {
     ';
 
 }
-
 add_shortcode('kalkulator_kredit','kalkulator_kredit');
-
-
-
-
-
-
-
 
 function kalkulator_depan() {
     wp_enqueue_style('cssbootstrap');
@@ -187,7 +179,7 @@ function kalkulator_depan() {
                             <select id="live-perhitungan-bunga" name="perhitungan-bunga" class="form-control">
                                 <option value="anuitas" selected="selected">Anuitas (Angsuran Tetap)</option>
                                 <option value="efektif">Efektif (Angsuran Menurun)</option>
-                                <option value="flat">Flat (Angsuran Tetap)</option>
+                                <option value="flat">Flat (Tetap)</option>
                             </select>
                         </div>
                     </div>
@@ -326,5 +318,4 @@ function kalkulator_depan() {
     </script>
     ';
 }
-
 add_shortcode('kalkulator_depan','kalkulator_depan');
